@@ -1,12 +1,49 @@
-# Autonomous QA Agent
+# 🚀 Autonomous QA Agent
 
 An intelligent, autonomous QA agent capable of constructing a "testing brain" from project documentation. It generates test cases and executable Selenium scripts grounded in the provided documentation.
+
+---
 
 ## Features
 - **Knowledge Base Ingestion**: Uploads and parses support documents (MD, TXT, JSON, PDF, HTML).
 - **RAG Pipeline**: Generates test cases grounded in documentation using a Vector DB (FAISS) and LLM (Groq/Llama3).
 - **Selenium Script Generation**: Converts test cases into runnable Python Selenium scripts.
 - **Free Model Support**: Uses Groq (free tier) for high-performance inference.
+
+---
+
+## Project Folder Structure
+```bash
+OceanAI-asmt-2/
+├── assets/
+│   ├── api_endpoints.json
+│   ├── checkout.html
+│   ├── product_specs.md
+│   └── ui_ux_guide.txt
+│
+├── backend/
+│   └── app/
+│       ├── __pycache__/
+│       ├── services/
+│       │   ├── __pycache__/
+│       │   ├── embeddings.py
+│       │   ├── parser.py
+│       │   ├── rag_agent.py
+│       │   ├── selenium_builder.py
+│       │   └── vectorstore.py
+│       └── main.py
+│
+├── streamlit_app/
+│   ├── app.py
+│   └── requirements.txt
+│
+├── venv/
+│
+├── .env
+└── README.md
+
+```
+---
 
 ## Setup Instructions
 
@@ -28,6 +65,8 @@ An intelligent, autonomous QA agent capable of constructing a "testing brain" fr
    ```
    *Note: A `.env` file with a placeholder has been created for you.*
 
+---
+
 ## How to Run
 
 ### 1. Start the Backend (FastAPI)
@@ -43,6 +82,8 @@ streamlit run backend/streamlit_app/app.py
 ```
 
 Access the UI at `http://localhost:8501`.
+
+---
 
 ## Usage Guide
 
@@ -74,6 +115,8 @@ Access the UI at `http://localhost:8501`.
   ```
   *Ensure you have `chromedriver` installed or managed via `webdriver-manager` (included in requirements).*
 
+---
+
 ## Support Documents Explanation
 
 The project uses the following support documents to ground the QA agent:
@@ -82,3 +125,4 @@ The project uses the following support documents to ground the QA agent:
 - **`assets/ui_ux_guide.txt`**: Provides UI styling guidelines, error message formats, and validation rules.
 - **`assets/api_endpoints.json`**: Describes the mock API structure, expected responses, and data formats.
 - **`assets/checkout.html`**: The target web page used to extract selectors and validate DOM interaction.
+
