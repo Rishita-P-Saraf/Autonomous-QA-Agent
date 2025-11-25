@@ -14,7 +14,7 @@ An intelligent, autonomous QA agent capable of constructing a "testing brain" fr
 
 ## Project Folder Structure
 ```bash
-OceanAI-asmt-2/
+OceanAI-assignment/
 ├── assets/
 │   ├── api_endpoints.json
 │   ├── checkout.html
@@ -125,4 +125,5 @@ The project uses the following support documents to ground the QA agent:
 - **`assets/ui_ux_guide.txt`**: Provides UI styling guidelines, error message formats, and validation rules.
 - **`assets/api_endpoints.json`**: Describes the mock API structure, expected responses, and data formats.
 - **`assets/checkout.html`**: The target web page used to extract selectors and validate DOM interaction.
+
 
