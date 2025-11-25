@@ -1,0 +1,22 @@
+{
+  "POST /apply_coupon": {
+    "description": "Validates and applies a discount coupon",
+    "payload": { "code": "string" },
+    "response": { "success": "boolean", "discount_percent": "number", "message": "string" }
+  },
+  "POST /submit_order": {
+    "description": "Submits the final order",
+    "payload": {
+      "fullname": "string",
+      "email": "string",
+      "address": "string",
+      "shipping_method": "string",
+      "payment_method": "string",
+      "items": [
+        { "item_id": "string", "quantity": "number" }
+      ],
+      "total_amount": "number"
+    },
+    "response": { "success": "boolean", "order_id": "string" }
+  }
+}

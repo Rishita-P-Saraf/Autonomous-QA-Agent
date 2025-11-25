@@ -1,0 +1,25 @@
+UI/UX Guidelines for E-Shop Checkout
+
+1. Color Scheme
+- Primary Button (Pay Now): Green (#27ae60)
+- Secondary Button (Update, Apply): Blue (#3498db)
+- Background: Light Gray (#f4f4f9)
+- Text: Dark Gray (#333)
+
+2. Typography
+- Font: Segoe UI, Tahoma, Geneva, Verdana, sans-serif
+- Headings: Dark Blue (#2c3e50)
+
+3. Feedback & Validation
+- Error Messages: Red text, small font (0.9em), hidden by default.
+- Success Messages: Green text, bold.
+- Discount Success: "Discount applied!" in green.
+
+4. Layout
+- Container: Centered, max-width 800px, white background with shadow.
+- Sections: Distinct sections for Cart, Shipping Details.
+- Form: Vertical layout with labels above inputs.
+
+5. Interactions
+- Hover effects on buttons.
+- Real-time updates for total price when quantity or shipping changes.
