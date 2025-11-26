@@ -1,6 +1,9 @@
 # 🚀 Autonomous QA Agent
 
 An intelligent, autonomous QA agent capable of constructing a "testing brain" from project documentation. It generates test cases and executable Selenium scripts grounded in the provided documentation.
+---
+
+**🌐 Hosted Application:** Access the UI at `http://localhost:8501`
 
 ---
 
@@ -130,6 +133,7 @@ The project uses the following support documents to ground the QA agent:
 - **`assets/ui_ux_guide.txt`**: Provides UI styling guidelines, error message formats, and validation rules.
 - **`assets/api_endpoints.json`**: Describes the mock API structure, expected responses, and data formats.
 - **`assets/checkout.html`**: The target web page used to extract selectors and validate DOM interaction.
+
 
 
 
